@@ -1,0 +1,25 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+/out/**
+/docker/test/
+/test/end-to-end/output/**
+node_modules/**
+output/
+.git/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+.DS_store
