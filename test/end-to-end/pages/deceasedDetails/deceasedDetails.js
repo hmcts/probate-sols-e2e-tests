@@ -1,7 +1,7 @@
 const helper = require('test/end-to-end/helpers/Utils.js');
 module.exports = function () {
     const I = this;
-    I.wait(10);
+    I.wait(3);
     var FirstName = "TestFirstName"+helper.getRandomNumber(1,1000000);
     helper.setValue(FirstName);
     I.fillField("First name(s)",FirstName);
@@ -13,6 +13,4 @@ module.exports = function () {
     I.fillField("deceasedDateOfBirth-month", "09");
     I.fillField("deceasedDateOfBirth-year", "2000");
     I.click("Continue");
-    //I.wait(2);
-
 };
