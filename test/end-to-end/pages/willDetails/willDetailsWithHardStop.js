@@ -1,5 +1,6 @@
 module.exports = function () {
     const I = this;
+    I.wait(5);
     I.click("#willExists-No");
     I.click("#willAccessOriginal-Yes");
     I.click("#willHasCodicils-Yes");

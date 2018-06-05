@@ -3,16 +3,16 @@ const testConfig = require("test/config.js");
 module.exports = function () {
     const I = this;
     I.amOnPage(testConfig.TestFrontendUrl);
-    I.wait(5)
-
+    I.waitForText("Email address");
     I.fillField("username", testConfig.TestSolicitorUserName);
     I.fillField("password", testConfig.TestSolicitorPassword);
-
     I.click("Sign in");
-    I.wait(10);
+    I.wait(7);
     I.click("Create new case");
     I.selectOption('Case type', 'Grant of representation');
-    I.selectOption('Event', 'Apply for probate');
+    // I.waitForText("Event");
+   // I.selectOption('Event', 'Apply for probate');
+    I.wait(6);
     I.click("Start");
-    I.wait(8);
+    I.wait(5);
 };

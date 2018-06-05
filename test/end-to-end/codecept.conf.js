@@ -5,19 +5,18 @@ exports.config = {
     'output': './output',
     'helpers': {
         'Puppeteer': {
-            'url': testConfig.TestFrontendUrl || 'https://www-ccd.nonprod.platform.hmcts.net/',
-            'waitForTimeout': 10000,
-            'show': true,
-            waitForAction: 2000,
+             'url': testConfig.TestFrontendUrl || 'https://www-ccd.nonprod.platform.hmcts.net/',
+            'waitForTimeout': 5000,
+            'show': false,
             ignoreHTTPSErrors:true,
-            headless:true,
+            'headless':true,
             //'HTTP_PROXY': 'proxyout.reform.hmcts.net:8080',
             chrome: {
                 ignoreHTTPSErrors: true,
                // headless: true,
                 args: [
                     '--no-sandbox',
-                    `--proxy-server=proxyout.reform.hmcts.net:8080`
+                    '--proxy-server=proxyout.reform.hmcts.net:8080'
                     //`--proxy-bypass-list=${process.env.E2E_PROXY_BYPASS}`
                 ]
             }

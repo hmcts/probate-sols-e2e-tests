@@ -1,6 +1,6 @@
 module.exports = function () {
     const I = this;
-
+    I.wait(3);
     I.fillField("First name(s)", "TestFirstName");
     I.fillField("Last name(s)", "TestLastName");
     I.fillField("deceasedDateOfDeath-day", "09");
@@ -10,6 +10,4 @@ module.exports = function () {
     I.fillField("deceasedDateOfBirth-month", "09");
     I.fillField("deceasedDateOfBirth-year", "2010");
     I.click("Continue");
-    //I.wait(2);
-
 };
