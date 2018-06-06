@@ -1,7 +1,6 @@
 Feature('Probate Sols E2E VerifyHardStop');
 
 Scenario("Verify No Will Hard Stop Scenario", function*(I) {
-    I.wait(7);
     I.loginAndSelectCreateCase();
     I.createApplication();
     I.fillDeceasedDetails();
