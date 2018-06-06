@@ -5,5 +5,5 @@ module.exports = function () {
     I.click("Continue");
     I.wait(6);
     I.click("Save and continue");
-    I.wait(5);
+    I.wait(8);
 };

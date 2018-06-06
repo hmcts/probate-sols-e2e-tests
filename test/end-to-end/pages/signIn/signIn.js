@@ -9,10 +9,10 @@ module.exports = function () {
     I.click("Sign in");
     I.wait(7);
     I.click("Create new case");
+    I.wait(10);
     I.selectOption('Case type', 'Grant of representation');
-    // I.waitForText("Event");
-   // I.selectOption('Event', 'Apply for probate');
-    I.wait(6);
+    I.waitForText("Event");
+    I.selectOption('Event', 'Apply for probate');
     I.click("Start");
-    I.wait(5);
+    I.wait(8);
 };

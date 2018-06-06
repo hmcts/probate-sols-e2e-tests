@@ -10,4 +10,5 @@ module.exports = function () {
     I.click("Continue");
     I.wait(4);
     I.click("Submit application");
+    I.wait(8);
 };

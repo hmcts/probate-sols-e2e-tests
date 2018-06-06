@@ -1,13 +1,12 @@
 const helper = require('test/end-to-end/helpers/Utils.js');
 module.exports = function () {
     const I = this;
-    I.wait(5);
+    I.wait(6);
     I.click("Search");
     I.wait(8);
     I.selectOption("Application type","Solicitor");
     I.selectOption("Registry location","Birmingham");
     I.fillField("//input[@id='deceasedForenames']",helper.getValue());
-    //I.wait(3);
     I.click("Apply");
     I.wait(5);
     I.click("//a[contains(@href,'/case/PROBATE/GrantOfRepresentation/')]");
@@ -21,5 +20,6 @@ module.exports = function () {
     I.wait(4);
     I.see("Mark the case as printed");
     I.dontSee("Go");
+    I.wait(6);
 };
 
