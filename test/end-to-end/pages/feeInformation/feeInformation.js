@@ -1,6 +1,6 @@
 module.exports = function () {
     const I = this;
-    I.wait(2);
+    I.wait(4);
     I.fillField("//input[@id='extraCopiesOfGrant']", "1");
     I.fillField("//input[@id='outsideUKGrantCopies']", "1");
     I.click("Continue");

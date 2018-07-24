@@ -9,14 +9,13 @@ Scenario("Verify Happy path Scenario", function*(I) {
      I.fillDeceasedEstateDetails();
      I.fillExecutorsDetails();
      I.fillAdditionalInformation();
-     I.click("Go");
      I.reviewLegalStatement();
      I.signStatementOfTruth();
      I.fillFeeInformationAndSubmitApplication();
      I.see("Complete application");
 });
 
-Scenario("Verify CaseWorker Happpath Scenario", function*(I) {
+Scenario("Verify CaseWorker print details", function*(I) {
     I.loginAsCaseWorker();
-    I.markAsCasePrinted();
+    I.printCaseDetails();
 });
