@@ -21,7 +21,6 @@ module.exports = function () {
         fillWillDetailsWithHardStop: steps.willDetails.willDetailsWithHardStop,
         loginAsCaseWorker: steps.signIn.signInCaseWorker,
         markAsCasePrinted: steps.casePrinted.casePrinted,
-        grantIssue: steps.grantDetails.issueAGrant,
-        printCaseDetails: steps.casePrinted.printDetails
+        grantIssue: steps.grantDetails.issueAGrant
     });
 };

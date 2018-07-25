@@ -17,5 +17,5 @@ Scenario("Verify Happy path Scenario", function*(I) {
 
 Scenario("Verify CaseWorker print details", function*(I) {
     I.loginAsCaseWorker();
-    I.printCaseDetails();
+    I.markAsCasePrinted();
 });

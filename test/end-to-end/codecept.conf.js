@@ -9,13 +9,13 @@ exports.config = {
 
             'waitForTimeout': 5000,
             'waitForAction': 500,
-            'show': true,
+            'show': false,
             ignoreHTTPSErrors:true,
             'headless':true,
             //'HTTP_PROXY': 'proxyout.reform.hmcts.net:8080',
             chrome: {
                 ignoreHTTPSErrors: true,
-                headless: false,
+               // headless: true,
                 args: [
                     '--no-sandbox',
                     '--proxy-server=proxyout.reform.hmcts.net:8080'
