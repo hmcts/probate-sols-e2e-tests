@@ -6,9 +6,9 @@ exports.config = {
     'helpers': {
         'Puppeteer': {
             'url': testConfig.TestFrontendUrl || 'https://www-ccd.nonprod.platform.hmcts.net/',
-            'waitForTimeout': 5000,
-            'waitForAction': 500,
-            'show': false,
+           // 'waitForTimeout': 5000,
+           // 'waitForAction': 500,
+            'show': true,
             ignoreHTTPSErrors:true,
             'headless':true,
             //'HTTP_PROXY': 'proxyout.reform.hmcts.net:8080',

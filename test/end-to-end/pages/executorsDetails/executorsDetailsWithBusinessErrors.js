@@ -1,12 +1,13 @@
 module.exports = function () {
     const I = this;
-    I.wait(2);
+    I.wait(6);
     I.fillField("First name(s)", "exec1");
     I.fillField("Last name(s)", "exec1");
     I.click("#primaryApplicantHasAlias-Yes");
     I.fillField("Enter their full name as it appears on the will", "Exec1WillName");
     I.click("#primaryApplicantIsApplying-Yes");
     I.click("//span[text()=concat('I can',\"'\", 't enter a UK postcode')]");
+    I.fillField("#AddressLine1", "114 Sutton Lane");
     I.fillField("#PostTown", "Hounslow");
     I.fillField("#County", "Middlesex");
     I.click("#otherExecutorExists-Yes");

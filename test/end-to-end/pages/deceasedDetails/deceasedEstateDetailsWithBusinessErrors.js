@@ -3,6 +3,7 @@ module.exports = function () {
     I.wait(5);
     I.click("#deceasedDomicileInEngWales-Yes");
     I.click("//span[text()=concat('I can',\"'\", 't enter a UK postcode')]");
+    I.fillField("#AddressLine1", "114 Sutton Lane");
     I.fillField("#PostTown", "Hounslow");
     I.fillField("#County", "Middlesex");
     I.click("#deceasedAnyOtherNames-Yes");
