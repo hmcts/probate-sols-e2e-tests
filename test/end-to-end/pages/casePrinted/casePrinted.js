@@ -9,7 +9,6 @@ module.exports = function () {
     I.selectOption('Case type', 'Grant of representation');
     I.wait(7);
     I.fillField("//input[@id='deceasedForenames']",helper.getValue());
-   // I.fillField("//input[@id='deceasedForenames']","TestUserFirstName4July1705");
     I.click("Apply");
     I.wait(5);
     I.click("//a[contains(@href,'/case/PROBATE/GrantOfRepresentation/')]");
@@ -22,7 +21,5 @@ module.exports = function () {
     I.click("Submit");
     I.wait(4);
     I.see("Awaiting documentation");
-    //End State : Awaiting documentation
-
 };
 
