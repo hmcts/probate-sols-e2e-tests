@@ -8,7 +8,7 @@ exports.config = {
             'url': testConfig.TestFrontendUrl || 'https://www-ccd.nonprod.platform.hmcts.net/',
            // 'waitForTimeout': 5000,
            // 'waitForAction': 500,
-            'show': true,
+            'show': false,
             ignoreHTTPSErrors:true,
             'headless':true,
             //'HTTP_PROXY': 'proxyout.reform.hmcts.net:8080',

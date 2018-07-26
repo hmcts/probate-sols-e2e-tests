@@ -5,7 +5,7 @@ import uk.gov.hmcts.Packager
 import uk.gov.hmcts.Versioner
 
 def triggers = []
-if (env.BRANCH_NAME == "master") {
+if (env.BRANCH_NAME == "BackOfficeE2E") {
     triggers << cron('H H(0-1) * * *') //build to trigger sometime between midnight and 2am every day
 }
 
