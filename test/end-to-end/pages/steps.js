@@ -20,6 +20,7 @@ module.exports = function () {
         fillExecutorDetailsWithErrors: steps.executorsDetails.executorsDetailsWithBusinessErrors,
         fillWillDetailsWithHardStop: steps.willDetails.willDetailsWithHardStop,
         loginAsCaseWorker: steps.signIn.signInCaseWorker,
-        markAsCasePrinted: steps.casePrinted.casePrinted
+        markAsCasePrinted: steps.casePrinted.casePrinted,
+        grantIssue: steps.grantDetails.issueAGrant
     });
 };

@@ -1,6 +1,7 @@
 module.exports = function () {
     const I = this;
-    I.wait(2);
+    I.click("Go");
+    I.wait(6);
     I.seeElement("//a[text()='legal_statement.pdf']");
     I.click("#solsSOTNeedToUpdate-No");
     I.click("Continue");
