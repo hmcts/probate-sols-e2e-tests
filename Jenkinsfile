@@ -15,10 +15,10 @@ properties(
                 pipelineTriggers(triggers),
                 parameters([
                         string(description: 'CCD_URL', defaultValue: 'https://www-ccd.nonprod.platform.hmcts.net', name: 'TEST_E2E_URL'),
-                        string(description: 'CCD_Sols_Username', defaultValue: 'probatesolicitorpreprod@gmail.com', name: 'TEST_SOLS_USER_NAME'),
-                        string(description: 'CCD_Sols_Password', defaultValue: 'Monday01', name: 'TEST_SOLS_PASSWORD'),
-                        string(description: 'CCD_CW_Username', defaultValue: 'probatecaseworker@gmail.com', name: 'TEST_CASEWORKER_USER_NAME'),
-                        string(description: 'CCD_CW_Password', defaultValue: 'Monday01', name: 'TEST_CASEWORKER_PASSWORD')
+                        string(description: 'CCD_Sols_Username', defaultValue: 'default', name: 'TEST_SOLS_USER_NAME'),
+                        string(description: 'CCD_Sols_Password', defaultValue: 'default', name: 'TEST_SOLS_PASSWORD'),
+                        string(description: 'CCD_CW_Username', defaultValue: 'default', name: 'TEST_CASEWORKER_USER_NAME'),
+                        string(description: 'CCD_CW_Password', defaultValue: 'default', name: 'TEST_CASEWORKER_PASSWORD')
                 ])
         ]
 )
