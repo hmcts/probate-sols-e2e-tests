@@ -2,8 +2,9 @@ const helper = require('test/end-to-end/helpers/Utils.js');
 module.exports = function () {
     const I = this;
     I.wait(2);
+    I.selectOption("Next step","Mark as ready for examination");
     I.click("Go");
-    I.wait(3);
+    I.wait(4);
     I.click("Continue");
     I.wait(4);
     I.click("Submit");
@@ -11,9 +12,10 @@ module.exports = function () {
     I.see("Ready for examination");
     I.wait(4);
     I.click("Notifications");
-    I.wait(1);
+    I.wait(2);
     I.see("Do you wish to send an email notification for documents received?");
     I.see("Yes");
+    I.selectOption("Next step","Examine case");
     I.click("Go");
     I.wait(4);
     I.click("Submit");

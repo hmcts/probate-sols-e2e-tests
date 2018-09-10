@@ -11,7 +11,7 @@ module.exports = function () {
     I.click("Add new");
     I.fillField("//input[@id='solsDeceasedAliasNamesList_0_SolsAliasname']", "Deceased AliasName");
     I.selectOption('Which Inheritance Tax form was filled in?', 'IHT 205 - there was no Inheritance Tax to pay');
-    I.fillField('Enter the gross value of the estate', "10000");
-    I.fillField('Enter the net value of the estate', "20000");
+    I.fillField('Enter the gross value of the estate', "3000");
+    I.fillField('Enter the net value of the estate', "5000");
     I.click('Continue');
 };
