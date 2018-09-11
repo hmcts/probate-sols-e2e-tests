@@ -16,8 +16,8 @@ exports.config = {
                 ignoreHTTPSErrors: true,
                // headless: true,
                 args: [
-                    '--no-sandbox',
-                    '--proxy-server=proxyout.reform.hmcts.net:8080'
+                    '--no-sandbox'
+                    //'--proxy-server=proxyout.reform.hmcts.net:8080'
                     //`--proxy-bypass-list=${process.env.E2E_PROXY_BYPASS}`
                 ]
             }
