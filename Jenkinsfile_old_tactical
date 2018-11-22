@@ -1,8 +1,6 @@
 #!groovy
 @Library('Reform')
-import uk.gov.hmcts.Ansible
-import uk.gov.hmcts.Packager
-import uk.gov.hmcts.Versioner
+import java.lang.Object
 
 def triggers = []
 if (env.BRANCH_NAME == "master") {

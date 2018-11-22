@@ -1,0 +1,29 @@
+#!groovy
+
+properties([
+        parameters([string(description: 'CCD_URL', defaultValue: 'https://www-ccd.nonprod.platform.hmcts.net', name: 'TEST_E2E_URL'),
+                    string(description: 'CCD_Sols_Username', defaultValue: 'default', name: 'TEST_SOLS_USER_NAME'),
+                    string(description: 'CCD_Sols_Password', defaultValue: 'default', name: 'TEST_SOLS_PASSWORD'),
+                    string(description: 'CCD_CW_Username', defaultValue: 'default', name: 'TEST_CASEWORKER_USER_NAME'),
+                    string(description: 'CCD_CW_Password', defaultValue: 'default', name: 'TEST_CASEWORKER_PASSWORD')
+        ]),
+        pipelineTriggers([cron('05 01 * * *')])
+])
+
+library "Infrastructure@${params.LIB_VERSION}"
+
+String product = "probate"
+
+String component = "sols-e2e-tests"
+
+def type = "nodejs"
+
+withNightlyPipeline(type, product, component) {
+    env.TEST_URL = 'https://ccd-case-management-web-aat.service.core-compute-aat.internal'
+    env.TEST_E2E_FRONTEND_URL = params.TEST_E2E_URL
+    env.TEST_USER_NAME = params.TEST_SOLS_USER_NAME
+    env.TEST_PASSWORD = params.TEST_SOLS_PASSWORD
+    env.TEST_USER_NAME = params.TEST_CASEWORKER_USER_NAME
+    env.TEST_PASSWORD = params.TEST_CASEWORKER_PASSWORD
+    enableCrossBrowserTest()
+}
