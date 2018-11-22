@@ -13,6 +13,6 @@ module.exports = function () {
     I.selectOption('Which Inheritance Tax form was filled in?', 'IHT 205 - there was no Inheritance Tax to pay');
     I.fillField('Enter the gross value of the estate', "6000000");
     I.fillField('Enter the net value of the estate', "9");
-    I.click('Continue');;
+    I.click('Continue');
     I.wait(2);
 };
