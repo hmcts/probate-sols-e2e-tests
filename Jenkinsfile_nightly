@@ -25,5 +25,15 @@ withNightlyPipeline(type, product, component) {
     env.TEST_PASSWORD = params.TEST_SOLS_PASSWORD
     env.TEST_USER_NAME = params.TEST_CASEWORKER_USER_NAME
     env.TEST_PASSWORD = params.TEST_CASEWORKER_PASSWORD
-    enableCrossBrowserTest()
+    after('build') {
+        sh 'yarn setup'
+        wrap([$class: 'Xvfb']) {
+                sh "printenv"
+                sh 'yarn run test-e2e'
+
+       }
+    }
+    //#enableCrossBrowserTest()
+                           
+
 }
